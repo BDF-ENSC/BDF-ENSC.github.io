@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Parrainage</title>
+
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+<canvas id="canvas"></canvas>
+<div class="container" id="mainDiv">
+    <div class="row title">
+        <h1 class="col-12" style="color: white">Voici l'heure du parrainage, ton sort est scélé ! </h1>
+    </div>
+    <div class="row align-content-center">
+<span class="input text-center col-12">
+    <input id="identifiant1A" type="text" style="text-align: center" placeholder="Entre ton identifiant ensc" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Entre ton identifiant ensc'">
+    <span></span>
+</span>
+    </div>
+    <br>
+    <div id="submitButton" class="button_cont" align="center">
+        <a class="example_d" target="_blank" rel="nofollow noopener">Valider</a>
+    </div>
+
+</div>
+
+<div class="container" id="resultDiv">
+    <h1 id="color"></h1>
+    <img id="img" src="" alt="">
+    <h3 id="enigme"></h3>
+    <h2><b>Pour retrouver ton parrain / ta marraine, rdv à l'adresse suivante :</b></h2>
+    <h3 id="adresse"></h3>
+</div>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/geom_conversions.js"></script>
+<script type="text/javascript" src="js/vector.js"></script>
+<script type="text/javascript" src="js/particles.js"></script>
+<script src="json/liste.js" charset="utf-8"></script>
+<script src="js/IOjson.js" charset="utf-8"></script>
+<script src="js/main.js" charset="utf-8"></script>
+</html>

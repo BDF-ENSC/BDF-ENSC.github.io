@@ -1,0 +1,155 @@
+.title {
+  font-size: 1.7em;
+  margin-bottom: 15vh;
+  margin-top: 20vh;
+}
+
+.example_d {
+  width: 10%;
+  color: #737373 !important;
+  text-transform: uppercase;
+  background: #ffffff;
+  padding: 20px;
+  border: 4px solid #737373 !important;
+  border-radius: 6px;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+}
+
+.example_d:hover {
+  color: #494949 !important;
+  border-radius: 50px;
+  border-color: #494949 !important;
+  transition: all 0.3s ease 0s;
+}
+
+#canvas {
+  color: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+}
+
+#img {
+  width: 15%;
+  height: auto;
+}
+
+#resultDiv {
+  display: none;
+  width: 100%;
+  margin: 2px 0 auto;
+  color: white;
+}
+#resultDiv h1 {
+  margin-top: 0px;
+  margin-bottom: 1px;
+  font-size: 100px;
+}
+
+.input {
+  margin: 0 auto;
+  width: 60%;
+  position: relative;
+  font-size: 10.5em;
+  background: linear-gradient(110deg, #ff0000, #009900, #ffff00, #0000ff, #ff6600);
+  padding: 3px;
+  display: block;
+  border-radius: 9999em;
+}
+.input *:not(span) {
+  font-size: 0.1em;
+  width: calc(100% - 12px);
+  height: 50px;
+  position: relative;
+  display: inherit;
+  border-radius: inherit;
+  margin: 0;
+  border: none;
+  outline: none;
+  padding: 0 0.325em;
+  z-index: 1;
+}
+.input *:not(span):focus + span {
+  opacity: 1;
+  transform: scale(1);
+}
+.input span {
+  transform: scale(0.993, 0.94);
+  transition: transform 0.5s, opacity 0.25s;
+  opacity: 0;
+  position: absolute;
+  z-index: 0;
+  margin: 4px;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  box-shadow: inset 0 0 0 3px #fff, 0 0 0 4px #fff, 3px -3px 30px #bfbfbf, -3px 3px 30px #737373;
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.5;
+  font-size: 1em;
+}
+
+body {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background: #1b1b1b;
+  background: linear-gradient(320deg, #1b1b1b 0%, #464c4d 100%);
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+html, body {
+  height: 100%;
+}
+
+input {
+  font-family: inherit;
+  line-height: inherit;
+  color: #2e3750;
+  min-width: 12em;
+}
+
+::placeholder {
+  color: #cbd0d5;
+}
+
+html::after {
+  content: "";
+  background: linear-gradient(110deg, #ff0000, #009900, #ffff00, #0000ff, #ff6600);
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  text-align: center;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  text-align: center;
+}
+
+:-ms-input-placeholder {
+  text-align: center;
+}
+
+/*# sourceMappingURL=main.css.map */

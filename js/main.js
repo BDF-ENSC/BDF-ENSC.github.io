@@ -29,49 +29,52 @@ function lunch(name){
 
     let color = null;
 
-        let colorResult = $("#color");
-        colorResult.text(strColor);
-        let imgResult = $("#img");
-        imgResult.attr('src', strImg );
-        let enigmeResult = $("#enigme");
-        enigmeResult.text(strEnigme);
-        let adresseResult = $("#adresse");
-        adresseResult.text(strAdresse);
 
-        let hrefImg = $("#lienImg");
-        hrefImg.attr('href', strImg);
+    let audio = $("#musique");
+    audio[0].play();
+    let colorResult = $("#color");
+    colorResult.text(strColor);
+    let imgResult = $("#img");
+    imgResult.attr('src', strImg );
+    let enigmeResult = $("#enigme");
+    enigmeResult.text(strEnigme);
+    let adresseResult = $("#adresse");
+    adresseResult.text(strAdresse);
+
+    let hrefImg = $("#lienImg");
+    hrefImg.attr('href', strImg);
 
 
 
-        switch (strColor) {
+    switch (strColor) {
 
-            case "Jaune" :
-                color = "yellow";
-                break;
-            case "Vert" :
-                color = "green";
-                break;
-            case "Bleu" :
-                color = "#4d4dff";
-                break;
-            case "Orange" :
-                color = "orange";
-                break;
-            case "Rouge" :
-                color = "red";
-                break;
+        case "Jaune" :
+            color = "yellow";
+            break;
+        case "Vert" :
+            color = "green";
+            break;
+        case "Bleu" :
+            color = "#4d4dff";
+            break;
+        case "Orange" :
+            color = "orange";
+            break;
+        case "Rouge" :
+            color = "red";
+            break;
 
-        }
-        colorResult.css("color", color);
+    }
+    colorResult.css("color", color);
 
-        return new Promise(resolve => {
-            $("#mainDiv").fadeOut(1000,function (){
-                $("#resultDiv").fadeIn(1500, function (){
-                    startParticle(color);
-                    resolve();
-                });
-            })
-        });
+    return new Promise(resolve => {
+        $("#mainDiv").fadeOut(1000,function (){
+            $("#resultDiv").fadeIn(1500, function (){
+                startParticle(color);
+                resolve();
+            });
+        })
+    });
 }
 
 

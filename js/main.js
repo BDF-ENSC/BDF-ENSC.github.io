@@ -2,26 +2,44 @@ $(document).ready(function() {
 
     $("#submitButton").on("click", function (){
         let name = $("#identifiant1A").val();
-        /*console.log(name);
-        alert(name);*/
 
-        let ioJson = new IOjson(liste);
 
-        let strColor = ioJson.get1AColor(name);
-        let strImg = ioJson.getImg(name);
-        let strEnigme = ioJson.getEnigme(name)
-        let strAdresse = ioJson.getAdresse(name)
+        switch (name) {
+            case "ublanc" :
+                name = "Test3";
+                break;
+        }
 
-        let color = null;
+        lunch(name);
+    })
+});
+
+function lunch(name){
+
+    let ioJson = new IOjson(liste);
+
+    let strColor = ioJson.get1AColor(name);
+    let strImg = ioJson.getImg(name);
+    let strEnigme = ioJson.getMessage(name);
+    let strAdresse = ioJson.getContact(name);
+
+    if (strImg === ""){
+        strImg = "img/logoBDF.png";
+    }
+
+    let color = null;
 
         let colorResult = $("#color");
         colorResult.text(strColor);
-        let imgResult = $("#img")
+        let imgResult = $("#img");
         imgResult.attr('src', strImg );
         let enigmeResult = $("#enigme");
         enigmeResult.text(strEnigme);
         let adresseResult = $("#adresse");
         adresseResult.text(strAdresse);
+
+        let hrefImg = $("#lienImg");
+        hrefImg.attr('href', strImg);
 
 
 
@@ -46,13 +64,16 @@ $(document).ready(function() {
         }
         colorResult.css("color", color);
 
-        $("#mainDiv").fadeOut(1000,function (){
-            $("#resultDiv").fadeIn(1500, function (){
-                startParticle(color);
-            });
-        })
-    })
-});
+        return new Promise(resolve => {
+            $("#mainDiv").fadeOut(1000,function (){
+                $("#resultDiv").fadeIn(1500, function (){
+                    startParticle(color);
+                    resolve();
+                });
+            })
+        });
+}
+
 
 function startParticle(color){
     canvas=document.getElementById("canvas");
@@ -88,4 +109,12 @@ function startParticle(color){
 
         requestAnimationFrame(update);
     }
+}
+
+function sleep(milliseconds) {
+    const date = Date.now();
+    let currentDate = null;
+    do {
+        currentDate = Date.now();
+    } while (currentDate - date < milliseconds);
 }

@@ -22,25 +22,25 @@ class IOjson{
     get1A(id){
         let liste = this.getAll1A();
         let p1 = liste.find( (p1) => {
-            return (p1.id === id);
+            return (p1.identifiant === id);
         });
         return p1;
     }
 
     get1AColor(id){
-        return this.get1A(id).color;
+        return this.get1A(id).famille;
     }
 
     getImg(id){
-        return this.get1A(id).img;
+        return this.get1A(id).path;
     }
 
-    getEnigme(id){
-        return this.get1A(id).enigme;
+    getMessage(id){
+        return this.get1A(id).message;
     }
 
-    getAdresse(id){
-        return this.get1A(id).adresse;
+    getContact(id){
+        return this.get1A(id).contact;
     }
 
 

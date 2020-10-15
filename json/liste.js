@@ -246,7 +246,7 @@
                 "famille": "Rouge",
                 "participe": "oui",
                 "path": ".\/img\/scolan_laura.jpeg",
-                "message": "RDV : \n(68 + 300 \/ 6)*1\/2 - (11-2) + 100 * 3 - 20000000\/100000 - 59*2 = 32\nDe qui sont ses fables : \nLe Corbeau, la Gazelle, la Tortue et le Rat\nLe Cerf et la Vigne",
+                "message": "RDV 19h : \n(68 + 300 \/ 6)*1\/2 - (11-2) + 100 * 3 - 20000000\/100000 - 59*2 = 32\nDe qui sont ses fables : \nLe Corbeau, la Gazelle, la Tortue et le Rat\nLe Cerf et la Vigne",
                 "contact": null
             },
             {
@@ -289,7 +289,7 @@
                 "participe": "oui",
                 "path": ".\/img\/de gasquet_colin.jpeg",
                 "message": "Je ne suis pas lidio de la promo, mais peut-on dire que dans cette \u00e9cole je me sens comme un poisson dans l'eau ?\n\nSalut \u00e0 toi tr\u00e8s cher fillot ! C'est un plaisir de pouvoir enfin t'adresser quelques mots. Nous allons tr\u00e8s bient\u00f4t nous rencontrer.\nDeux autres 1A ont re\u00e7u le m\u00eame message. Je vous encourage tous les trois \u00e0 vous retrouver le plus t\u00f4t possible \u00e0 l'arr\u00eat de bus Arts et M\u00e9tiers, puis prenez ensemble le bus 8 direction H\u00f4pital Pellegrin, descendez apr\u00e8s 3 arr\u00eats et rejoignez moi chez moi. Je vous y attends avec d'autres membres de votre nouvelle famille ORANGE !\n\nD\u00e8s que tu as lu ce message et enfilez tes meilleures chaussures, envoie LUNULE au 06.95.26.01.84 pour obtenir plus de d\u00e9tails sur mon adresse exacte. Envoie aussi LUNULE sur ta conv messenger de promo et sois \u00e0 l\u2019aff\u00fbt des deux autres personnes qui enverront le m\u00eame message. \u00c9tablis le contact avec eux pour que vous puissiez vous rejoindre au point de rdv \u00e9voqu\u00e9 ci dessus.\n\nLa chasse est ouverte \ud83d\ude09\ud83e\udde1",
-                "contact": "06.95.26.01.84x"
+                "contact": "06.95.26.01.84"
             },
             {
                 "identifiant": "alarchi",

@@ -148,7 +148,7 @@
                 "famille": "Orange",
                 "participe": "oui",
                 "path": ".\/img\/cadet_elise.jpg",
-                "message": "J'esp\u00e8re que je m'\u00e9tais pas trop cram\u00e9e, bienvenue dans la famille fillot, et appr\u00e9cie ton parrain \ud83e\udde1",
+                "message": "Bienvenue dans la famille fillot, envoie un message pour la suite des festivités 🧡",
                 "contact": "0783704605"
             },
             {

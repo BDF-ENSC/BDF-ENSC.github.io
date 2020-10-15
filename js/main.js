@@ -45,6 +45,8 @@ function lunch(name){
     hrefImg.attr('href', strImg);
 
 
+    $('body').css("overflow-y", "auto");
+    $('body').css("height", "100%");
 
     switch (strColor) {
 
